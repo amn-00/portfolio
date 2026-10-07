@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Design tokens — change colors/fonts here and the whole site follows */
+@theme {
+  /* Blaugrana palette */
+  --color-ground: #ece7da;
+  --color-dot: #c9c2b0;
+  --color-panel: #e1e4ea;
+  --color-blue: #004d98;
+  --color-blue-deep: #00305f;
+  --color-gold: #edbb00;
+  --color-garnet: #a50044;
+  --color-ink: #1b1a2e;
+  --color-text: #2f2e3d;
+  --color-muted: #5c5a6b;
+  --color-ok: #6cc77a;
+
+  --font-display: "Jersey 15", "Arial Narrow", ui-sans-serif, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-type: "Courier Prime", "Courier New", ui-monospace, monospace;
+
+  --shadow-px: 6px 6px 0 var(--color-ink);
+  --shadow-px-sm: 3px 3px 0 var(--color-ink);
+  --shadow-px-lg: 9px 9px 0 var(--color-ink);
+
+  --animate-blink: blink 1s steps(2) infinite;
+  @keyframes blink { 50% { opacity: 0; } }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-synthesis-weight: none; /* Jersey 15 has one weight; never fake-bold it */
+    @apply bg-ground text-text font-mono text-[15px] leading-relaxed tracking-[.02em];
+    background-image: radial-gradient(var(--color-dot) 1px, transparent 1.2px);
+    background-size: 14px 14px;
+  }
+  section { scroll-margin-top: 80px; }
+  :focus-visible { outline: 3px dashed var(--color-garnet); outline-offset: 3px; }
+  canvas.px { image-rendering: pixelated; }
+}
+
+@layer components {
+  /* chunky offset-shadow button */
+  .btn {
+    @apply inline-flex items-center gap-2 border-[3px] border-ink bg-gold px-[22px] py-2.5
+      font-display text-[21px] uppercase tracking-[.08em] leading-none text-ink no-underline
+      shadow-px-sm cursor-pointer transition-[transform,box-shadow] duration-75;
+    box-shadow: 5px 5px 0 var(--color-ink);
+  }
+  .btn:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 var(--color-ink); }
+  .btn:active { transform: translate(4px, 4px); box-shadow: 1px 1px 0 var(--color-ink); }
+
+  .px-card { @apply border-[3px] border-blue bg-panel shadow-px; }
+  .section-title {
+    @apply mb-11 text-center font-display font-bold leading-[1.05] tracking-[.03em] text-blue text-balance;
+    font-size: clamp(38px, 6.4vw, 72px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
