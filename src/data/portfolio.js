@@ -7,7 +7,11 @@ export const profile = {
   handle: "aman", // shown in the logo as "aman.dev"
   lede:
     "AI engineer building and evaluating LLM systems: agent memory, retrieval and evals, plus the full-stack apps around them. Open to AI/ML, GenAI and full-stack roles.",
-  pills: ["Immediate joiner"],
+  // Hero pills. `href` makes a pill a link (e.g. scroll to a section).
+  pills: [
+    { text: "Immediate joiner", blink: true },
+    { text: "Paper accepted · NetCrypt 2026", href: "#research" },
+  ],
   email: "amanchaudharyy01@gmail.com",
   // Put your resume at public/resume.pdf. Set to "" to hide the Resume button (GitHub button shows instead).
   resume: "/resume.pdf",
@@ -20,7 +24,7 @@ export const profile = {
   card: {
     name: "AMAN",
     rating: 94,
-    position: "AI \nENGINEER",
+    position: "AI ENGINEER",
     stats: [
       { label: "PY", value: 92, full: "Python" },
       { label: "LLM", value: 90, full: "LLM apps & tool use" },
@@ -132,12 +136,33 @@ export const projects = [
   },
 ];
 
-// icon: "star" | "scroll" | "lens" | "badge"  (pixel icons in PixelIcon.jsx)
-export const achievements = [
-  { icon: "star", title: "CGPA 8.45, top 5%", text: "Integrated B.Tech + M.Tech CS (AI & Robotics), Gautam Buddha University, 2021–2026" },
-  { icon: "scroll", title: "Thesis accepted at NetCrypt 2026, JNU", text: "Hybrid ACO-GA smart contract optimization: 36% faster convergence, 41% risk reduction vs pure ACO" },
-  { icon: "lens", title: "Cyber security intern, Amroha Police", text: "OSINT on 10+ cybercrime cases; found 3+ web vulnerabilities (XSS, IDOR) via bug bounties" },
-  { icon: "badge", title: "Machine Learning Specialization", text: "DeepLearning.AI & Stanford, plus Kaggle Intermediate ML and NPTEL Blockchain" },
+// "Background" box. Groups show in this order. icon: "scroll" | "cap" | "lens" | "badge" | "star"
+export const background = [
+  {
+    group: "Research",
+    id: "research",
+    items: [
+      { icon: "scroll", title: "Thesis accepted at NetCrypt 2026, JNU", text: "Hybrid ACO-GA smart contract optimization: 36% faster convergence, 11% better fitness and 41% lower risk vs pure ACO" },
+    ],
+  },
+  {
+    group: "Education",
+    items: [
+      { icon: "cap", title: "Integrated B.Tech + M.Tech CS (AI & Robotics)", text: "Gautam Buddha University, 2021–2026" },
+    ],
+  },
+  {
+    group: "Experience",
+    items: [
+      { icon: "lens", title: "Cyber security intern, Amroha Police · Jun–Jul 2025", text: "OSINT on 10+ cybercrime cases; found 3+ web vulnerabilities (XSS, IDOR) via bug bounties" },
+    ],
+  },
+  {
+    group: "Certifications",
+    items: [
+      { icon: "badge", title: "Supervised Machine Learning", text: "DeepLearning.AI & Stanford (Andrew Ng) · plus Kaggle Intermediate ML and NPTEL Blockchain" },
+    ],
+  },
 ];
 
 export const skills = [

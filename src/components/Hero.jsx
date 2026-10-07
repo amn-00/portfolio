@@ -32,12 +32,21 @@ export default function Hero() {
         </h1>
         <p className="mx-auto max-w-[56ch] tracking-[.03em] text-[clamp(15px,1.4vw,18px)] lg:mx-0">{profile.lede}</p>
         <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
-          {profile.pills.map((p, i) => (
-            <span key={p} className="border-2 border-blue bg-panel px-3 py-1 text-[12.5px] font-bold uppercase tracking-[.08em] text-blue shadow-px-sm">
-              {i === 0 && <span className="mr-2 inline-block size-[9px] animate-blink bg-blue" />}
-              {p}
-            </span>
-          ))}
+          {profile.pills.map((p) => {
+            const cls = "border-2 border-blue bg-panel px-3 py-1 text-[12.5px] font-bold uppercase tracking-[.08em] text-blue no-underline shadow-px-sm";
+            const inner = (
+              <>
+                {p.blink && <span className="mr-2 inline-block size-[9px] animate-blink bg-blue" />}
+                {p.text}
+                {p.href && <span aria-hidden="true"> ↓</span>}
+              </>
+            );
+            return p.href ? (
+              <a key={p.text} href={p.href} className={`${cls} transition-transform duration-75 hover:-translate-x-px hover:-translate-y-px hover:bg-gold`}>{inner}</a>
+            ) : (
+              <span key={p.text} className={cls}>{inner}</span>
+            );
+          })}
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-[18px] lg:justify-start">
           <a className="btn" href="#work">View projects</a>

@@ -6,6 +6,7 @@ const PAL = { g: "#004D98", y: "#EDBB00", o: "#A50044", k: "#1B1A2E", c: "#ECE7D
 export const ICONS = {
   logo: ["..gggggg..", ".gyyyyyyg.", "gyykyykyyg", "gyykyykyyg", "gyyyyyyyyg", "gyoyyyyoyg", "gyyooooyyg", ".gyyyyyyg.", "..gggggg..", ".........."],
   ball: ["...kkkkkk...", "..kwwkkwwk..", ".kwwwkkwwwk.", "kwwwwwwwwwwk", "kkwwwwwwwwkk", "kkkwwkkwwkkk", "kkkwwkkwwkkk", "kkwwwwwwwwkk", "kwwwwwwwwwwk", ".kwwwkkwwwk.", "..kwwkkwwk..", "...kkkkkk..."],
+  cap: ["...........", "....kkk....", "..kkkkkkk..", "kkkkkkkkkkk", "..kkkkkkk.y", "...kkkkk..y", "...kgggk..y", "...kgggk.yy", "....kkk..yy", "...........", "..........."],
   star: ["....k......", "....ky.....", "...kyyk....", "kkkkyyykkkk", ".kyyyyyyyk.", "..kyyyyyk..", "..kyyyyyk..", ".kyykkkyyk.", ".kyk...kyk.", "kkk.....kkk", "..........."],
   scroll: [".kkkkkkkkk.", "kcccccccckk", "kckkkkkkcck", "kcccccccck.", "kckkkkkcck.", "kcccccccck.", "kckkkkkkcck", "kcccccccckk", ".kkkkkkkkk.", "...........", "..........."],
   lens: ["..kkkkk....", ".kcbbbck...", "kcbbbbbck..", "kbbbbbbbk..", "kbbbbbbbk..", "kcbbbbbck..", ".kcbbbckk..", "..kkkkkkok.", ".......kook", "........kok", ".........k."],
