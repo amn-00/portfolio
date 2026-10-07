@@ -39,7 +39,7 @@ export const profile = {
     { cmd: "whoami", out: ["Aman Chaudhary · AI engineer (LLM systems + full-stack)"] },
     { cmd: "ls ~/projects", out: ["lethe/  devpulse/  sentiment/  real-estate/  isles-of-kaira/"] },
     { cmd: "cat lethe/README.md", out: ["Long-term memory for LLM agents.", "97% on held-out tests with 88% fewer memories."] },
-    { cmd: "pytest -q lethe", out: ["✓ 48 passed"] },
+    { cmd: "pytest -q lethe", out: ["✓ 49 passed"] },
     { cmd: "npm test --prefix devpulse", out: ["✓ 17 integration tests passed"] },
     { cmd: "status", out: ["open to work · immediate joiner"] },
   ],
@@ -75,7 +75,7 @@ export const projects = [
     cat: "ai",
     desc: "Long-term memory for LLM agents. It pulls durable facts out of chats, keeps a small active set in ChromaDB, archives the weakest memories and reloads them when a question needs them. Benchmarked against 4 baselines.",
     stat: "97% accuracy · 88% fewer memories",
-    tags: ["Python", "FastAPI", "ChromaDB", "Groq", "48 tests"],
+    tags: ["Python", "FastAPI", "ChromaDB", "Groq", "49 tests"],
     links: [
       { label: "Live demo", href: "https://lethe-agent-memory.onrender.com" },
       { label: "Code", href: "https://github.com/amn-00/lethe-agent-memory" },
