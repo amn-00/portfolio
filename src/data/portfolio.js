@@ -52,7 +52,7 @@ export const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-// "What I bring" tactics board: three moves, left to right on the pitch.
+// "How I play" tactics board: three moves, left to right on the pitch.
 export const gamePlan = [
   {
     no: 1,
