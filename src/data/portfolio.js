@@ -72,7 +72,7 @@ export const gamePlan = [
     no: 3,
     move: "Ship",
     title: "Tested and live",
-    text: "CI on every push and real deploys, even on a 512 MB free tier.",
+    text: "CI on every push and real deploys",
     proof: "66 tests in CI · 5 live demos",
   },
 ];
