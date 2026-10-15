@@ -46,17 +46,35 @@ export const profile = {
 };
 
 export const navLinks = [
-  { label: "What I bring", href: "#bring" },
+  { label: "How I play", href: "#bring" },
   { label: "Projects", href: "#work" },
   { label: "Stats", href: "#stats" },
   { label: "Contact", href: "#contact" },
 ];
 
-// icon: "chart" | "bolt" | "globe"
-export const perks = [
-  { icon: "chart", title: "Eval-first AI", text: "I measure before I claim: baselines, held-out sets, an LLM judge and repeated runs with confidence intervals." },
-  { icon: "bolt", title: "Ships to prod", text: "CI/CD, integration tests and live deploys, even on a 512 MB free tier." },
-  { icon: "globe", title: "Ready day one", text: "Fresher, immediate joiner. 5-day office anywhere in India, or abroad with sponsorship." },
+// "How I play" tactics board: three moves, left to right on the pitch.
+export const gamePlan = [
+  {
+    no: 1,
+    move: "Build",
+    title: "Agents, RAG and full-stack apps",
+    text: "LLM agents with long-term memory, retrieval with hallucination guards, and the FastAPI and Next.js apps around them.",
+    proof: "lethe · DevPulse",
+  },
+  {
+    no: 2,
+    move: "Measure",
+    title: "Evals before claims",
+    text: "Baselines, held-out tests, an LLM judge and repeated runs with confidence intervals.",
+    proof: "97% with 88% fewer memories",
+  },
+  {
+    no: 3,
+    move: "Ship",
+    title: "Tested and live",
+    text: "CI on every push and real deploys, even on a 512 MB free tier.",
+    proof: "66 tests in CI · 5 live demos",
+  },
 ];
 
 // Filter chips. Each project's `cat` must match one of these keys.

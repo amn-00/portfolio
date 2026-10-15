@@ -1,6 +1,6 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
-import Perks from "./components/Perks";
+import GamePlan from "./components/GamePlan";
 import Projects from "./components/Projects";
 import Stats from "./components/Stats";
 import Contact from "./components/Contact";
@@ -12,7 +12,7 @@ export default function App() {
       <Nav />
       <main id="top">
         <Hero />
-        <Perks />
+        <GamePlan />
         <Projects />
         <Stats />
         <Contact />

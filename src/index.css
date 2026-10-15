@@ -62,3 +62,17 @@
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Tactics board: arrows draw in once the section is in view */
+.tactics .pass { stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .tactics:not(.played) .pass { opacity: 0; }
+  .tactics.played .pass { animation: pass-in .6s ease-out both; }
+  .tactics.played .pass-2 { animation-delay: .9s; }
+  .tactics.played .pass-3 { animation-delay: 1.8s; }
+}
+@keyframes pass-in { from { opacity: 0; } to { opacity: 1; } }
+/* Labels on the pitch get too small on phones; the cards below carry the words there */
+@media (max-width: 640px) { .tactics .move-label { display: none; } }
+.tactics:not(.played) .ball-move { display: none; }
+.tactics.played .ball-rest { display: none; }
