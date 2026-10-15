@@ -53,7 +53,7 @@ export default function GamePlan() {
       style={{ background: "repeating-linear-gradient(90deg, #2f7a3a 0 80px, #2a6e34 80px 160px)" }}
     >
       <div className="mx-auto max-w-[1180px] px-5">
-        <h2 className="section-title !mb-8 !text-gold [text-shadow:4px_4px_0_var(--color-ink)]">How I play</h2>
+        <h2 className="section-title !mb-8 !text-gold [text-shadow:4px_4px_0_var(--color-ink)]">What I bring</h2>
 
         {/* The pitch */}
         <div className="mx-auto max-w-[1120px] border-[3px] border-ink shadow-px" style={{ background: "repeating-linear-gradient(90deg, #348a41 0 8.33%, #2e7d3a 8.33% 16.66%)" }}>

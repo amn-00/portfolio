@@ -46,13 +46,13 @@ export const profile = {
 };
 
 export const navLinks = [
-  { label: "How I play", href: "#bring" },
+  { label: "What I bring", href: "#bring" },
   { label: "Projects", href: "#work" },
   { label: "Stats", href: "#stats" },
   { label: "Contact", href: "#contact" },
 ];
 
-// "How I play" tactics board: three moves, left to right on the pitch.
+// "What I bring" tactics board: three moves, left to right on the pitch.
 export const gamePlan = [
   {
     no: 1,
