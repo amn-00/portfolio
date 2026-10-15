@@ -29,7 +29,7 @@ export default function Contact() {
   return (
     <section id="contact" className="mt-16 border-t-[6px] border-gold bg-blue py-20 text-ground">
       <div className="mx-auto max-w-[1180px] px-5">
-        <h2 className="section-title !text-gold [text-shadow:4px_4px_0_var(--color-ink)]">Ready to sign</h2>
+        <h2 className="section-title !text-gold [text-shadow:4px_4px_0_var(--color-ink)]">Get in touch</h2>
         <p className="mx-auto max-w-[64ch] text-center text-balance tracking-[.04em] text-[#DCE6F2] text-[clamp(15px,1.6vw,19px)]">
           Hiring for AI/ML, GenAI or SDE roles? I can start right away. Email is the fastest way to reach me.
         </p>

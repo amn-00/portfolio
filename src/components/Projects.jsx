@@ -36,7 +36,7 @@ export default function Projects() {
 
   return (
     <section id="work" className="mx-auto max-w-[1180px] px-5 pt-20 pb-10">
-      <h2 className="section-title">First team</h2>
+      <h2 className="section-title">Projects</h2>
 
       <div role="group" aria-label="Filter by area" className="mx-auto flex max-w-[1120px] flex-wrap justify-center gap-3.5">
         {categories.map((c) => {
